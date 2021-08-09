@@ -25,16 +25,9 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-// @font-face {   
-//   font-family: 'Kurale';   
-//   src: url('/assets/fonts/Kurale-Regular.ttf');
-// }
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-@font-face {   
-  font-family: 'raleway-reg';   
-  src: url('/assets/fonts/raleway_regular.ttf');
-}
+
 .app-background {
     left: 0px;
     width: 100%;
@@ -45,7 +38,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      filter: brightness(0.92);
+      filter: brightness(0.72);
     }
   }
 
@@ -71,7 +64,7 @@
   }
 
   .card-bg-secondary, .card-bg-primary {
-    font-family: 'Kurale', serif;
+    font-family: 'Noto Sans', sans-serif;
   }
 
   .level-content {

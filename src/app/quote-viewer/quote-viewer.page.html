@@ -8,25 +8,12 @@
   <div class="image-loader" *ngIf="isLoading">
     <ion-spinner name="bubbles" color="primary"></ion-spinner>
   </div>
-  <ion-card *ngFor="let quote of quoteListArray" class="ion-margin-bottom">
+  <ion-card class="ion-margin-bottom">
+    <img src="assets/images/cover/{{quoteListArray[0]-1}}.jpg">
     <div class="quote-text">
       <div class="broken-heart"> </div>
-      <p [innerHTML]="quote"></p>
+      <p [innerHTML]="quoteListArray[1]"></p>
     </div>
-    <ion-card-header class="tools-wrapper">
-      <ion-icon color="light" name="copy" (click)="onCopyToClipboard(quote)"></ion-icon>
-      <ion-icon color="light" name="share-social" (click)="onShare(quote)"></ion-icon>
-      <ng-template #emptyHeart>
-        <ion-icon color="light" name="heart-outline" (click)="updateFavouriteStorage('add', quote)"></ion-icon>
-      </ng-template>
-      <ion-icon *ngIf="checkIsFavourite(quote); else emptyHeart" color="light" name="heart"
-        (click)="updateFavouriteStorage('remove', quote)"></ion-icon>
-      <ion-icon color="light" name="logo-whatsapp" (click)="whatsappShare(quote)"></ion-icon>
-    </ion-card-header>
   </ion-card>
-
-  <ion-list *ngIf="quoteListArray && !quoteListArray.length" class="ion-text-center ion-padding">
-    No items available in favourite.
-  </ion-list>
 
 </ion-content>

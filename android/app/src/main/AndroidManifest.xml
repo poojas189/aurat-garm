@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.corlogix.postmalone"
+    package="com.corlogix.auratgarm"
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
@@ -10,10 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" tools:replace="android:value" android:value="ca-app-pub-3378766083665427~5019006701" />
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" tools:replace="android:value" android:value="ca-app-pub-8225195931869449~1308362295" />
         <activity
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
-            android:name="com.corlogix.postmalone.MainActivity"
+            android:name="com.corlogix.auratgarm.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBarLaunch"
             android:launchMode="singleTask">

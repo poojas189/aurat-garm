@@ -21,7 +21,7 @@ export class AdmobService {
     public datahandlerService: DatahandlerService,
     private admobFree: AdMobFree) {
 
-    this.db.object('postmaloneAdsConfig').valueChanges().subscribe(res => {
+    this.db.object('auratgarmAdsConfig').valueChanges().subscribe(res => {
       this.adConfig = res;
       // console.log(this.adConfig);
       this.displayAds = this.adConfig.showAds;
@@ -90,7 +90,7 @@ export class AdmobService {
 
       setTimeout(() => {
         this.isIntervalEnd = true;
-      }, 20000);
+      }, 10000);
 
     }
 

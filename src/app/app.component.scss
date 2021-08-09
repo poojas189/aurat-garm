@@ -31,11 +31,12 @@ ion-icon {
   img {
     height: 190px;
     padding-top: 30px;
+    filter: drop-shadow(2px 4px 6px black);
   }
 }
 
 .love-air {
-  color: #00b892;
+  color: var(--ion-color-primary);
   text-align: center;
   margin: 0;
   padding-top: 25px;

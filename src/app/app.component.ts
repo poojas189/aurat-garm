@@ -133,7 +133,7 @@ export class AppComponent {
 
         } else {
           const alert = await this.alertController.create({
-            header: 'Love Post Malone? Please rate 5 star!',
+            header: 'Please rate us 5 star!',
             buttons: [{
               text: 'Rate Us',
               handler: () => {
@@ -199,29 +199,29 @@ export class AppComponent {
   async onRateFromExit() {
     await this.datahandlerService.set('isRated', true);
     if (this.platform.is('android')) {
-      window.open('http://play.google.com/store/apps/details?id=com.corlogix.postmalone', '_system');
+      window.open('http://play.google.com/store/apps/details?id=com.corlogix.auratgarm', '_system');
     } else if (this.platform.is('ios')) {
-      window.open('https://itunes.apple.com/gb/com.corlogix.postmalone', '_system');
+      window.open('https://itunes.apple.com/gb/com.corlogix.auratgarm', '_system');
     }
   }
 
   onRateUs() {
     this.menuCtrl.toggle();
     if (this.platform.is('android')) {
-      window.open('http://play.google.com/store/apps/details?id=com.corlogix.postmalone', '_system');
+      window.open('http://play.google.com/store/apps/details?id=com.corlogix.auratgarm', '_system');
     } else if (this.platform.is('ios')) {
-      window.open('https://itunes.apple.com/gb/com.corlogix.postmalone', '_system');
+      window.open('https://itunes.apple.com/gb/com.corlogix.auratgarm', '_system');
     }
   }
 
   ShareGeneric() {
     this.menuCtrl.toggle();
-    this.socialSharing.share('Download the app Post Malone Quotes \nFor Android http://play.google.com/store/apps/details?id=com.corlogix.postmalone', 'Post Malone Quotes', null)
+    this.socialSharing.share('Download the app औरत को गर्म कैसे करे \nFor Android http://play.google.com/store/apps/details?id=com.corlogix.auratgarm', 'औरत को गर्म कैसे करे', null)
   }
 
   onMoreApps() {
     this.menuCtrl.toggle();
-    this.router.navigate(['/more-apps']);
+    window.open('https://play.google.com/store/apps/developer?id=Hindi+Sexy+Story/Kahani', '_system');
   }
 
   onHome() {

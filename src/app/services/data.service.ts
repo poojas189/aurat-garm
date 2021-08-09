@@ -16,7 +16,8 @@ export class DataService {
     public storage: Storage) {
 
     this.init();
-    this.db.object('postmaloneData').valueChanges().subscribe(res => {
+    this.db.object('auratgarmData').valueChanges().subscribe(res => {
+      // console.log(res);
       this.datahandlerService._quoteDatabaseSubject.next(res);
       this.createPushNotification(res);
     });
@@ -34,17 +35,17 @@ export class DataService {
 
   createPushNotification(data) {
 
-    let notificationQuote = data[Math.floor(Math.random() * (data.length-2))].quoteList[Math.floor(Math.random() * 12)].replace(/<br>/g, '');
+    let notificationQuote = data[Math.floor(Math.random() * (data.length))].quoteList[1].replace(/<br>/g, '');
   //  console.log(notificationQuote);
     this.localNotifications.schedule({
       text: notificationQuote,
       foreground: true,
-      title: 'Quote of the Day',
+      title: 'आज की टिप',
       trigger: {
         count: 1,
         every: {
-          hour: 10,
-          minute: 45
+          hour: 21,
+          minute: 10
         }
       },
 

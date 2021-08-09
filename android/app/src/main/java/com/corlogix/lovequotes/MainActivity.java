@@ -1,4 +1,4 @@
-package com.corlogix.postmalone;
+package com.corlogix.auratgarm;
 
 import android.os.Bundle;
 
