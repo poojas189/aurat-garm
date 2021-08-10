@@ -90,7 +90,7 @@ export class AdmobService {
 
       setTimeout(() => {
         this.isIntervalEnd = true;
-      }, 10000);
+      }, 5000);
 
     }
 

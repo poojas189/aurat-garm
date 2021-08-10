@@ -199,24 +199,24 @@ export class AppComponent {
   async onRateFromExit() {
     await this.datahandlerService.set('isRated', true);
     if (this.platform.is('android')) {
-      window.open('http://play.google.com/store/apps/details?id=com.corlogix.auratgarm', '_system');
+      window.open('http://play.google.com/store/apps/details?id=com.corlogix.aurat', '_system');
     } else if (this.platform.is('ios')) {
-      window.open('https://itunes.apple.com/gb/com.corlogix.auratgarm', '_system');
+      window.open('https://itunes.apple.com/gb/com.corlogix.aurat', '_system');
     }
   }
 
   onRateUs() {
     this.menuCtrl.toggle();
     if (this.platform.is('android')) {
-      window.open('http://play.google.com/store/apps/details?id=com.corlogix.auratgarm', '_system');
+      window.open('http://play.google.com/store/apps/details?id=com.corlogix.aurat', '_system');
     } else if (this.platform.is('ios')) {
-      window.open('https://itunes.apple.com/gb/com.corlogix.auratgarm', '_system');
+      window.open('https://itunes.apple.com/gb/com.corlogix.aurat', '_system');
     }
   }
 
   ShareGeneric() {
     this.menuCtrl.toggle();
-    this.socialSharing.share('Download the app औरत को गर्म कैसे करे \nFor Android http://play.google.com/store/apps/details?id=com.corlogix.auratgarm', 'औरत को गर्म कैसे करे', null)
+    this.socialSharing.share('Download the app औरत को गर्म कैसे करे \nFor Android http://play.google.com/store/apps/details?id=com.corlogix.aurat', 'औरत को गर्म कैसे करे', null)
   }
 
   onMoreApps() {

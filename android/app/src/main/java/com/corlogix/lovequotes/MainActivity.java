@@ -1,4 +1,4 @@
-package com.corlogix.auratgarm;
+package com.corlogix.aurat;
 
 import android.os.Bundle;
 
